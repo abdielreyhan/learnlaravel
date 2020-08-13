@@ -72,7 +72,16 @@
                     Pizza List
                 </div>
 
-                <p>{{ $type }} - {{ $base }}</p>
+                <!-- @for($i=0;$i<count($type_pizza);$i++)
+                    <p> {{$type_pizza[$i]['type']}} </P>
+                @endfor -->
+                <!-- loop can be index(to shoq index of looping) or last(to show last looping type boolean) -->
+
+                @foreach($type_pizza as $pizz)
+                    <p>{{$loop->index}}--{{$pizz['type']}}--{{$pizz['base']}}--{{$pizz['price']}}</p>
+                    
+                @endforeach
+
             </div>
         </div>
     </body>

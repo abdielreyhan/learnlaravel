@@ -18,8 +18,12 @@ Route::get('/', function () {
 });
 
 Route::get('/pizzas', function () {
-    $data=['type'=>'hawaian','base'=>'cheese'];
-    return view('pizzas',$data);
+    $pizza=[
+        ['type'=>'hawaian','base'=>'cheese','price'=>1],
+        ['type'=>'Indonesia','base'=>'cheese','price'=>15],
+        ['type'=>'Supreme','base'=>'cheese','price'=>20],
+    ];
+    return view('pizzas',['type_pizza'=>$pizza]);
     // automatically return json format 
     // return ['content'=>'pizza'];
 });
