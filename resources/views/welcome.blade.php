@@ -17,20 +17,9 @@
     @endif
 
     <div class="content">
+    <img class="imagelogo" src="/img/pizza.png" alt="pizza image">
         <div class="title m-b-md">
-            My First Project LARAVEL <br/>
-            Actualy
-        </div>
-
-        <div class="links">
-            <a href="https://laravel.com/docs">Docs</a>
-            <a href="https://laracasts.com">Laracasts</a>
-            <a href="https://laravel-news.com">News</a>
-            <a href="https://blog.laravel.com">Blog</a>
-            <a href="https://nova.laravel.com">Nova</a>
-            <a href="https://forge.laravel.com">Forge</a>
-            <a href="https://vapor.laravel.com">Vapor</a>
-            <a href="https://github.com/laravel/laravel">GitHub</a>
+            Pizza House
         </div>
     </div>
 </div>

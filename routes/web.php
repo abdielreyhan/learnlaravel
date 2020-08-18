@@ -23,7 +23,20 @@ Route::get('/pizzas', function () {
         ['type'=>'Indonesia','base'=>'cheese','price'=>15],
         ['type'=>'Supreme','base'=>'cheese','price'=>20],
     ];
-    return view('pizzas',['type_pizza'=>$pizza]);
+
+    return view('pizzas',[
+        'type_pizza'=>$pizza,
+        'name'=>request('name'),
+        'age'=>request('age')
+    ]);
     // automatically return json format 
     // return ['content'=>'pizza'];
+});
+
+Route::get('/pizzas/{id}', function ($id) {
+
+    // use $id variable for db record
+    return view('details',[
+        'id'=>$id
+    ]);
 });

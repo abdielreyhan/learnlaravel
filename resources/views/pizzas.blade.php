@@ -8,7 +8,8 @@
         <div class="title m-b-md">
             Pizza List
         </div>
-
+        <p>{{$name}}</p>
+        <p>{{$age}}</p>
         <!-- @for($i=0; $i<count($type_pizza); $i++)
             <p> {{$type_pizza[$i]['type']}} </P>
         @endfor -->
