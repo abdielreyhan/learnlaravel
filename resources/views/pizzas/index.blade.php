@@ -1,4 +1,4 @@
-@extends('layouts/layout')
+@extends('layouts.layout')
 
 @section('content')
 <div class="flex-center position-ref full-height">
@@ -8,15 +8,15 @@
         <div class="title m-b-md">
             Pizza List
         </div>
-        <p>{{$name}}</p>
-        <p>{{$age}}</p>
         <!-- @for($i=0; $i<count($type_pizza); $i++)
             <p> {{$type_pizza[$i]['type']}} </P>
         @endfor -->
     <!-- loop can be index(to shoq index of looping) or last(to show last looping type boolean) -->
 
-        @foreach($type_pizza as $pizz)
-            <p>{{$loop->index}}--{{$pizz['type']}}--{{$pizz['base']}}--{{$pizz['price']}}</p>
+        @foreach($type_pizza as $pizza)
+            <div>
+                {{$pizza->name}} - {{$pizza->type}} - {{$pizza->base}}
+            </div>
         @endforeach
 
     </div>
