@@ -7,6 +7,11 @@ use App\Pizza;
 
 class PizzaController extends Controller
 {
+    // public function __contruct()
+    // {
+    //     $this->middleware('auth');
+    // }
+
     public function index()
     {
         // Get without order
