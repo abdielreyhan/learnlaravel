@@ -19,6 +19,8 @@
             </div>
         @endforeach
 
+        <p class="mssg">{{session('mssg')}}</p>
+
     </div>
 </div>
 @endsection

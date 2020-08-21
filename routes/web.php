@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/pizzas', 'PizzaController@index');
 Route::get('/pizzas/create', 'PizzaController@create');
 Route::get('/pizzas/{id}', 'PizzaController@show');
+Route::post('/pizzas', 'PizzaController@store');
+Route::delete('/pizzas/{id}', 'PizzaController@destroy');
+
+
